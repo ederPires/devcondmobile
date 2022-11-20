@@ -1,25 +1,24 @@
-import React, {createContext, useContext, useReducer} from 'react';
+import React, { createContext, useContext, useReducer } from 'react';
 
 import UserReducer from '../reducers/UserReducer';
 
 const initialState = {
-  user: UserReducer()
+    user: UserReducer()
 };
-
 const MainReducer = (state, action) => ({
-  user: UserReducer(state, action)
+    user: UserReducer(state.user, action)
 });
 
 export const StateContext = createContext();
 
 export const StateProvider = ({children}) => {
-  const [state, dispatch] = useReducer(MainReducer, initialState);
+    const [state, dispatch] = useReducer(MainReducer, initialState);
 
-  return (
-    <StateContext.Provider value={[state, dispatch]}>
-      {children}
-    </StateContext.Provider>
-  );
+    return (
+        <StateContext.Provider value={[state, dispatch]}>
+            {children}
+        </StateContext.Provider>
+    );
 };
 
-export const useStateValue = () => useContext(stateContext);
+export const useStateValue = () => useContext(StateContext);
