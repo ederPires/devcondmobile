@@ -1,10 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {StateProvider} from './src/contexts/StateContext';
+import {NavigationContainer} from '@react-navigation/native';
+
+import AuthStack from './src/stacks/AuthStack';
 
 export default () => {
   return (
-    <View>
-      <Text>Opa, funcionando...</Text>
-    </View>
+    <StateProvider>
+      <NavigationContainer>
+        <AuthStack />
+      </NavigationContainer>
+    </StateProvider>
   );
 };

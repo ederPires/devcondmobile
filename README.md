@@ -6,6 +6,8 @@ npx react-native init <projectName> --template react-native@^0.70.0
 //Iniciando
 npx react-native run-android
 
+//ver devices ativos
+adb devices
 
 //Instalar dependências
 yarn add @react-navigation/native
@@ -42,15 +44,29 @@ npm install --save react-native-calendar-picker
 
 npm install --save moment
 
-//Conflito
-npm install --save styled-components
+//Resolvendo Conflitos
+npm install --legacy-peer-deps
 
-//Resolve 
+npm install --save styled-components --legacy-peer-deps
+npm i react-native-gesture-handler --legacy-peer-deps
+npm install react-native-safe-area-context
+
+npm install --save styled-components --force
+npm i react-native-gesture-handler --force
+
+//Resolvendo erros
 npm audit fix --force
-
-//Error 01
-//this command with --force or --legacy-peer-deps
-
 npm i --force
 
+npm cache clean --force
+
 npm install --legacy-peer-deps
+
+//async storage
+npm i @react-native-async-storage/async-storage
+
+//React navigation
+yarn add @react-navigation/native
+
+@react-navigation/stack
+
