@@ -70,3 +70,44 @@ yarn add @react-navigation/native
 
 @react-navigation/stack
 
+
+//Erro Resolvendo
+//inserir no index do node-modules/react-nantive
+
+ // Deprecated Prop Types
+  get ColorPropType(): $FlowFixMe {
+    return require('deprecated-react-native-prop-types').ColorPropType;
+    // invariant(
+    //   false,
+    //   'ColorPropType has been removed from React Native. Migrate to ' +
+    //     "ColorPropType exported from 'deprecated-react-native-prop-types'.",
+    // );
+  },
+  get EdgeInsetsPropType(): $FlowFixMe {
+    return require('deprecated-react-native-prop-types').EdgeInsetsPropType;
+    // invariant(
+    //   false,
+    //   'EdgeInsetsPropType has been removed from React Native. Migrate to ' +
+    //     "EdgeInsetsPropType exported from 'deprecated-react-native-prop-types'.",
+    // );
+  },
+  get PointPropType(): $FlowFixMe {
+    return require('deprecated-react-native-prop-types').PointPropType;
+    // invariant(
+    //   false,
+    //   'PointPropType has been removed from React Native. Migrate to ' +
+    //     "PointPropType exported from 'deprecated-react-native-prop-types'.",
+    // );
+  },
+  get ViewPropTypes(): $FlowFixMe {
+    return require('deprecated-react-native-prop-types').ViewPropTypes;
+  //   invariant(
+  //     false,
+  //     'ViewPropTypes has been removed from React Native. Migrate to ' +
+  //       "ViewPropTypes exported from 'deprecated-react-native-prop-types'.",
+  //   );
+  // },
+};
+
+
+[Dica](https://stackoverflow.com/questions/72755476/invariant-violation-viewproptypes-has-been-removed-from-react-native-migrate-t)
