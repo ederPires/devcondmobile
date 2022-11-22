@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-devcondmobile-devcondmobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-devcondmobile-devcondmobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		4F23033598C14F75837C50D9 /* homelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A49D7A21D4823A4E2BD8B /* homelogo.png */; };
+		934FBA980687403796DE9E4E /* undraw_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D6ABDD90B747FCA9208D2A /* undraw_home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = devcondmobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-devcondmobile-devcondmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devcondmobile-devcondmobileTests.release.xcconfig"; path = "Target Support Files/Pods-devcondmobile-devcondmobileTests/Pods-devcondmobile-devcondmobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8C4A49D7A21D4823A4E2BD8B /* homelogo.png */ = {isa = PBXFileReference; name = "homelogo.png"; path = "../src/assets/homelogo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12D6ABDD90B747FCA9208D2A /* undraw_home.png */ = {isa = PBXFileReference; name = "undraw_home.png"; path = "../src/assets/undraw_home.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				5D82E222D55A4A2191B9EBF0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +152,16 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		5D82E222D55A4A2191B9EBF0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				8C4A49D7A21D4823A4E2BD8B /* homelogo.png */,
+				12D6ABDD90B747FCA9208D2A /* undraw_home.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +259,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4F23033598C14F75837C50D9 /* homelogo.png in Resources */,
+				934FBA980687403796DE9E4E /* undraw_home.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
